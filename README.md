@@ -9,7 +9,7 @@ Pre-built CTranslate2 ROCm wheels for Windows, extracted from official releases 
 The official CTranslate2 releases package ROCm Windows wheels inside a zip archive (`rocm-python-wheels-Windows.zip`). This repo hosts them as individual files so they can be installed directly:
 
 ```
-pip install https://github.com/PinW/ctranslate2-rocm-wheels/releases/download/v4.7.1-rocm72/ctranslate2-4.7.1+rocm72-cp312-cp312-win_amd64.whl --force-reinstall --no-deps
+pip install https://github.com/PinW/ctranslate2-rocm-wheels/releases/download/v4.7.1-rocm72/ctranslate2-4.7.1-cp312-cp312-win_amd64.whl --force-reinstall --no-deps
 ```
 
 This is used by [Whisper Key](https://github.com/PinW/whisper-key-local) for automated GPU onboarding on AMD GPUs (RDNA 2+).
@@ -20,9 +20,13 @@ This is used by [Whisper Key](https://github.com/PinW/whisper-key-local) for aut
 
 | Python | Wheel |
 |--------|-------|
-| 3.11 | `ctranslate2-4.7.1+rocm72-cp311-cp311-win_amd64.whl` |
-| 3.12 | `ctranslate2-4.7.1+rocm72-cp312-cp312-win_amd64.whl` |
-| 3.13 | `ctranslate2-4.7.1+rocm72-cp313-cp313-win_amd64.whl` |
+| 3.9 | `ctranslate2-4.7.1-cp39-cp39-win_amd64.whl` |
+| 3.10 | `ctranslate2-4.7.1-cp310-cp310-win_amd64.whl` |
+| 3.11 | `ctranslate2-4.7.1-cp311-cp311-win_amd64.whl` |
+| 3.12 | `ctranslate2-4.7.1-cp312-cp312-win_amd64.whl` |
+| 3.13 | `ctranslate2-4.7.1-cp313-cp313-win_amd64.whl` |
+| 3.14 | `ctranslate2-4.7.1-cp314-cp314-win_amd64.whl` |
+| 3.14t | `ctranslate2-4.7.1-cp314-cp314t-win_amd64.whl` |
 
 ### RDNA 1 (RX 5000 series)
 
@@ -38,4 +42,5 @@ RDNA 1 requires a custom CTranslate2 build with ROCm 6.2. See [ctranslate2-rocm-
 
 - [CTranslate2](https://github.com/OpenNMT/CTranslate2) — the project that builds these wheels
 - [CTranslate2 releases](https://github.com/OpenNMT/CTranslate2/releases) — official release archives
+- [ctranslate2-rocm-rdna1](https://github.com/PinW/ctranslate2-rocm-rdna1) — custom RDNA 1 build
 - [Whisper Key](https://github.com/PinW/whisper-key-local) — local speech-to-text app that uses these
